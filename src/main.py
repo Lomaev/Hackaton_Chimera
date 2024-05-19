@@ -13,6 +13,8 @@ raw_data = parser.parse_all_files(last_date)
 
 clear_data = filter.filter(raw_data)
 
+print('Transaction count before and after filtering:', len(raw_data), len(clear_data))
+
 values_for_names = server_communication.get_names()
 values_for_fees = server_communication.get_fees()
 

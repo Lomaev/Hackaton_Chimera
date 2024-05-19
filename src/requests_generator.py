@@ -6,7 +6,7 @@ def parse_purpose(purpose, values_for_names, values_for_fees):
     phone = ''
     for m in re.finditer(r"((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}", purpose):
         # Check for phone number, not date or something else.
-        if m.group().startswith('8') or m.group().startswith('+7'):
+        if m.group().startswith('8') or m.group().startswith('+7') or m.group().startswith('7'):
             phone = m.group()  # Nothing.
 
     email = ''

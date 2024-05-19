@@ -34,7 +34,7 @@ def parse_all_files(last_date: datetime, working_dir_path="data/"):
             print('"' + filename + '"', 'is not a upload file. Skipped.')
             continue
 
-        with open(working_dir_path + filename, mode='r') as file:
+        with open(working_dir_path + filename, mode='r', encoding='UTF-8') as file:
             # Reading file information and date.
             parameters = dict()
             while buff := file.readline().rstrip():
