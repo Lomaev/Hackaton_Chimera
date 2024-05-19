@@ -39,18 +39,3 @@ def get_fees():  # B24_ID, NAME, PATIENT, ID, TARGET_ID
         values_for_fees[int(B24_ID)] = (NAME, PATIENT, ID, TARGET_ID)
 
     return values_for_fees
-
-
-# admin_login = requests.post('http://hackathon4.leikozu.net/bitrix/admin/?login=yes', data=
-# {'AUTH_FORM':'Y', 'TYPE':'AUTH', 'USER_LOGIN':'hack', 'USER_PASSWORD':'paxgez-Qeztyq-dutpi9', 'Connection':'keep-alive'})
-
-# print(admin_login.text)
-
-
-'''AUTH_FORM=Y
-TYPE=AUTH
-USER_LOGIN=hack
-USER_PASSWORD=paxgez-Qeztyq-dutpi9
-Login
-captcha_sid
-sessid=549ca1da5931da82c87e0e44fa88f0a9'''

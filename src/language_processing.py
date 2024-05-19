@@ -25,9 +25,6 @@ names_extractor = NamesExtractor(morph_vocab)
 
 
 def select_names(text: str):
-    text_test = "На пожертвование Оленьке, Дашеньке, Фросе, Полине, Полюше, Дарье, Петровой Полиночке. Петрова Полина Викторовна."
-    text_test_1 = 'Благотворительное пожертвование на Елену Кузнецову.'
-
     doc = Doc(text)
 
     doc.segment(segmenter)
